@@ -1,0 +1,54 @@
+{
+  "Define an acter": {
+    "prefix": "acter",
+    "body": ["acter $1 = \"$2\";"]
+  },
+  "Define an alias": {
+    "prefix": "alias",
+    "body": ["acter $1 = $2;"]
+  },
+  "Eval": {
+    "prefix": "eval",
+    "body": ["eval Code(\"$1\");"]
+  },
+  "Delay": {
+    "prefix": "delay",
+    "body": ["delay $1;"]
+  },
+  "chapter": {
+    "prefix": "chapter",
+    "body": ["chapter $1 {", "\t$2", "}"]
+  },
+  "toC": {
+    "prefix": "to Chapter",
+    "body": ["to Chapter(\"$1\");"]
+  },
+  "toO": {
+    "prefix": "to Ont",
+    "body": ["to Ont(\"$1\");"]
+  },
+  "setBGM": {
+    "prefix": "bgm",
+    "body": ["bgm Audio(\"$1\");"]
+  },
+  "playBGM": {
+    "prefix": "play.bgm",
+    "body": ["play.bgm;"]
+  },
+  "pauseBGM": {
+    "prefix": "pause.bgm",
+    "body": ["pause.bgm;"]
+  },
+  "bgi": {
+    "prefix": "bg Image",
+    "body": ["bg Image(\"$1\");"]
+  },
+  "bgv": {
+    "prefix": "bg Video",
+    "body": ["bg Video(\"$1\");"]
+  },
+  "bgc": {
+    "prefix": "bg Color",
+    "body": ["bg \"$1\";"]
+  }
+}

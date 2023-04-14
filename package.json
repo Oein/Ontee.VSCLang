@@ -1,0 +1,41 @@
+{
+  "name": "oein-ontee-lang",
+  "displayName": "Ontee.Lang",
+  "description": "Syntax highlighting for ont lang",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "ont",
+        "path": "./snippets/snippets.json"
+      }
+    ],
+    "languages": [
+      {
+        "id": "ont",
+        "aliases": [
+          "Ont",
+          "ont"
+        ],
+        "extensions": [
+          ".ont"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "ont",
+        "scopeName": "source.ont",
+        "path": "./syntaxes/ont.tmLanguage.json"
+      }
+    ]
+  }
+}

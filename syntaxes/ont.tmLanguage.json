@@ -1,0 +1,62 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Ont",
+  "patterns": [
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "match": "\\b[0-9]+(\\b|\\.|,)",
+      "name": "constant.numeric.ont"
+    }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.function.ont",
+          "match": "\\b(Image|Audio|Video|Code)\\b",
+          "comment": "Media function"
+        },
+        {
+          "name": "keyword.define.ont",
+          "match": "\\b(alias|acter|chapter)\\b",
+          "comment": "Define command"
+        },
+        {
+          "name": "keyword.control.chapter",
+          "match": "\\b(to)\\b",
+          "comment": "Chapter handler"
+        },
+        {
+          "name": "support.function",
+          "match": "\\b(Ont|Chapter)\\b",
+          "comment": "Chapter stuff"
+        },
+        {
+          "name": "support.function",
+          "match": "\\b(eval|delay|bg)\\b"
+        },
+        {
+          "name": "support.function",
+          "match": "\\b(play.bgm|pause.bgm|bgm)\\b"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.ont",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.ont",
+          "match": "\\\\."
+        }
+      ]
+    }
+  },
+  "scopeName": "source.ont"
+}
